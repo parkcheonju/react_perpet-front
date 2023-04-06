@@ -28,47 +28,49 @@ function ProductSec1() {
 
   return (
     <div>
-      <h2 className='product-title'>핫딜상품🔥</h2>
-      <div className='ParentProduct1'>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Navigation]}
-          className='Product_slide1'
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1150: {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
-          }}
-        >
-          {product.map((hotdealItem, idx) => {
-            if (hotdealItem.discount) {
-              return (
-                <SwiperSlide key={idx}>
-                  <div id='product-list'>
-                    <div className='hotdeal'>
-                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} soldout={hotdealItem.soldout} />
+      <h2 className='product-title'>🔥HOT DEAL🔥</h2>
+      <div className='product_mg'>
+        <div className='ParentProduct1'>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Navigation]}
+            className='Product_slide1'
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1150: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+          >
+            {product.map((hotdealItem, idx) => {
+              if (hotdealItem.discount) {
+                return (
+                  <SwiperSlide key={idx}>
+                    <div id='product-list'>
+                      <div className='hotdeal'>
+                        <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} soldout={hotdealItem.soldout} />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              );
-            }
-          })}
-        </Swiper>
+                  </SwiperSlide>
+                );
+              }
+            })}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

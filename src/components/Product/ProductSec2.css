@@ -1,7 +1,7 @@
 .product-title {
   width: 100%;
   max-width: 1200px;
-  margin: 40px auto 20px;
+  margin: 30px auto 30px;
   text-align: left;
 }
 
@@ -10,7 +10,9 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.product_mg{
+  padding-bottom: 30px;
+}
 .ParentProduct2 {
   position: relative;
 }
@@ -72,5 +74,10 @@
   .Product_slide2 .swiper-button-next,
   .Product_slide2 .swiper-button-prev {
     display: none;
+  }
+}
+@media (max-width: 640px) {
+  .product-title{
+    text-align:center;
   }
 }

@@ -2,8 +2,8 @@
 .brand_design-background {
   width: 100%;
   background: linear-gradient(90.3deg, #ff425c 0%, #ff9774 100%);
-  margin-top: 60px;
-  padding: 60px 0 60px 0;
+  margin: 30px 0 30px 0;
+  padding: 40px 0 40px 0;
 }
 .brand_design-container {
   width: 100%;
@@ -25,6 +25,11 @@
   font-weight: 400;
   word-wrap: break-word;
 }
+.brand_design-promise{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 
 /*======= BrandDesign end========*/
 
@@ -33,6 +38,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 30px 0 30px 0;
 }
 
 .brand_flex {
@@ -90,11 +96,17 @@
     display: block;
     text-align: center;
     width: 283px;
-    height: 80px;
+    height: 100px;
   }
   .brand_design-background {
     align-items: center;
     max-width: 1200px;
     height: 200px;
+  }
+}
+@media (max-width: 640px) {
+  .brand_flex{
+    width: 100%;
+    justify-content: space-around
   }
 }

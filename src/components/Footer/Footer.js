@@ -51,7 +51,7 @@ function Footer() {
   return (
     <>
       <div className="footer_inner">
-        <div className="flex footer_pd-left footer_mg-top-60">
+        <div className="flex footer_pd-left">
           <img src="/images/Footer/logo.svg" alt="myImage" />
         </div>
         <div className="footer_pd-left footer_font">

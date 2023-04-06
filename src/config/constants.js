@@ -1,1 +1,1 @@
-export const API_URL = "https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app";
+export const API_URL = "https://port-0-react-perpet-server-duzu222alg4pw0ie.sel3.cloudtype.app";

@@ -24,9 +24,11 @@ function BrandDesign() {
   ];
   return (
     <div className="brand_design-background">
+        <div className="brand_design-promise">
+          <img className="ratio_img" src="../images/EventBanner/Group2.png" alt="arrow" />
+        </div>
       <div className="brand_inner">
         <div className="brand_design-container">
-          <img className="ratio_img" src="../images/EventBanner/Group2.png" alt="arrow" />
           {DesignItems.map((item) => (
             <div className="brand_design-item" key={item.id}>
               <img src={item.src} alt={item.alt} />

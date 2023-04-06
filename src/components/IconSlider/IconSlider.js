@@ -265,62 +265,64 @@ function IconSlider() {
     },
   ];
   return (
-    <div className='ParentIconSlider'>
-      <Swiper
-        slidesPerView={5}
-        grid={{
-          rows: 2,
-          fill: "row",
-        }}
-        scrollbar={{
-          hide: false,
-        }}
-        navigation
-        slidesPerGroup={5}
-        modules={[Grid, Scrollbar, Navigation]}
-        className='IconSlider'
-        breakpoints={{
-          768: {
-            slidesPerView: 10,
-            slidesPerGroup: 10,
-            grid: {
-              rows: 2,
-              fill: "row",
+    <div className='IconSlider_mg'>
+      <div className='ParentIconSlider'>
+        <Swiper
+          slidesPerView={5}
+          grid={{
+            rows: 2,
+            fill: "row",
+          }}
+          scrollbar={{
+            hide: false,
+          }}
+          navigation
+          slidesPerGroup={5}
+          modules={[Grid, Scrollbar, Navigation]}
+          className='IconSlider'
+          breakpoints={{
+            768: {
+              slidesPerView: 10,
+              slidesPerGroup: 10,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },
             },
-          },
-          1200: {
-            slidesPerView: 10,
-            grid: {
-              rows: 2,
-              fill: "row",
+            1200: {
+              slidesPerView: 10,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },
             },
-          },
-        }}
-      >
-        {icons.map((icons, idx) => {
-          return (
-            <SwiperSlide
-              key={idx}
-              style={{
-                width: "93.2px",
-                marginRight: "28px",
-              }}
-            >
-              <div className='iconSlider_icons-box'>
-                <Link className='iconSlider_icons-link' to={`/products/category/${icons.category}`}>
-                  <div className='iconSlider_icons-imgBox'>
-                    <img src={`/${icons.src}`} alt={`${icons.alt}`}></img>
-                  </div>
-                  <div class='iconSlider_icons-titleBox'>
-                    <span className='iconSlider_icons-title'>{icons.title}</span>
-                    <span className='iconSlider_icons-subTitle'>{icons.subTitle}</span>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+          }}
+        >
+          {icons.map((icons, idx) => {
+            return (
+              <SwiperSlide
+                key={idx}
+                style={{
+                  width: "93.2px",
+                  marginRight: "28px",
+                }}
+              >
+                <div className='iconSlider_icons-box'>
+                  <Link className='iconSlider_icons-link' to={`/products/category/${icons.category}`}>
+                    <div className='iconSlider_icons-imgBox'>
+                      <img src={`/${icons.src}`} alt={`${icons.alt}`}></img>
+                    </div>
+                    <div class='iconSlider_icons-titleBox'>
+                      <span className='iconSlider_icons-title'>{icons.title}</span>
+                      <span className='iconSlider_icons-subTitle'>{icons.subTitle}</span>
+                    </div>
+                  </Link>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
     </div>
   );
 }

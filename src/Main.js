@@ -15,7 +15,6 @@ function Main() {
       <EventBanner />
       <Product />
       <EventBanner2 img='./images/EventBanner/EventBanner_dog.png' category={"food"} />
-      <MultipleSlide />
       <Brand />
     </div>
   );

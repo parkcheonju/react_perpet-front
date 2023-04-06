@@ -8,17 +8,11 @@
   padding-top: 20px;
 }
 
-.Navigation li {
-  padding-right: 15px;
-}
 
-.Navigation li a span {
-  padding-right: 5px;
-  font-size: 20px;
-}
-
-.Navigation li a {
-  cursor: pointer;
+.Navigation_Dropdown {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ant-dropdown-menu {
@@ -28,19 +22,35 @@
 .Navigation svg {
   height: 0.8em;
 }
+.Navigation_container{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.Navigation_container-style{
+  margin: -5px 0 0 5px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #676767; 
+}
+
+.Navigation span img{
+  width: 22px;
+  height: 18px;
+}
 
 .Navigation .ant-dropdown-trigger,
 .Navigation .nav_memu {
-  vertical-align: middle;
+  width: 140px;
 }
 
 .Navigation .ant-btn {
   font-weight: bold;
   padding: 4px 25px;
-}
-
-.Navigation .ant-btn svg {
-  height: 0.9em;
 }
 
 

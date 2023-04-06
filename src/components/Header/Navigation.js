@@ -1,9 +1,6 @@
 import React from "react";
 import "./Navigation.css";
-import { MenuOutlined } from "@ant-design/icons";
-import { Dropdown, Space, Button } from "antd";
-import { UploadOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router-dom";
+import { Dropdown, Space} from "antd";
 import { Link } from "react-router-dom";
 
 function Navigation() {
@@ -41,27 +38,15 @@ function Navigation() {
       key: "8",
     },
   ];
-  const navigate = useNavigate();
-  const onClickUpload = () => {
-    navigate("/Upload/UploadPage");
-  };
+
   return (
-    <div>
-      <ul className="Navigation">
-        <li>
-          <Dropdown menu={{ items }}>
-            <span onClick={(e) => e.preventDefault()}>
-              <MenuOutlined className="MenuOutlined" style={{ marginTop: "-2px" }} />
-              <Space style={{ fontSize: "16px", color: "#454545", fontWeight: "600" }}>카테고리</Space>
-            </span>
-          </Dropdown>
-        </li>
-        <li>
-          <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>
-            상품 업로드
-          </Button>
-        </li>
-      </ul>
+    <div className="Navigation">
+      <Dropdown className='Navigation_Dropdown' menu={{ items }}>
+        <span onClick={(e) => e.preventDefault()}>
+          <div className='Navigation_container'><img src='/images/Header/menu.png' alt='category' /></div>
+          <Space className='Navigation_container-style'>카테고리</Space>
+        </span>
+      </Dropdown>
     </div>
   );
 }

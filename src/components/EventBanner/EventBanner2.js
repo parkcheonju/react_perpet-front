@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./EventBanner2.css";
+import "./EventBanner.css";
 
 function EventBanner2({ img, category }) {
   return (
-    <div className='eventBanner2_mg'>
-      <div className='eventBanner2'>
+    <div className='eventBanner_container'>
+      <div className='eventBanner'>
         <Link to={`products/category/${category}`}>
           <img src={img} alt={img}/>
         </Link>

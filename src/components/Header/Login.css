@@ -28,6 +28,8 @@
 .login_first:hover > .bellshow {
   opacity: 1;
   visibility: visible;
+  border-radius: 20px;
+  height: 260px;
 }
 .bellshow_text {
   text-align: center;
@@ -40,11 +42,16 @@
   font-weight: 800;
 }
 .bellshow_button {
+  width: 100%;
   padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
 }
 .bellshow_button button {
   display: block;
-  margin: 0 auto;
+  margin: 10px 0 10px 0;
   width: 254px;
 }
 .bellshow_button-second {
