@@ -1,0 +1,81 @@
+.SwiperSlide_main {
+  box-sizing: border-box;
+}
+
+.SwiperSlide_main a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  text-align: center;
+}
+.SwiperSlide_main a img {
+  width: 576px;
+  height: 383px;
+  border-radius: 5%;
+}
+.ProductItem_main {
+  display: flex;
+}
+.title {
+  width: 100%;
+  max-width: 1180px;
+  margin: 40px auto 20px;
+  text-align: left;
+}
+
+.ParentMultipleSlide #product-list:hover .product-img {
+  scale: 1.1;
+}
+.SwiperSlide_main a {
+  pointer-events: none; /*이벤트를 막음*/
+  cursor: default; /*마우스 커서를 포인트에서 디폴트로 변경*/
+}
+
+.ParentMultipleSlide {
+  position: relative;
+}
+
+.MultipleSlide {
+  position: static;
+}
+
+.MultipleSlide .swiper-button-next {
+  right: 50%;
+  margin-right: -656px;
+  top: 38%;
+  --swiper-navigation-size: 30px;
+  transition: all 0.2s ease;
+  --swiper-theme-color: #ff4d4f;
+  position: absolute;
+}
+
+.MultipleSlide .swiper-button-prev {
+  left: 50%;
+  margin-left: -656px;
+  top: 38%;
+  --swiper-navigation-size: 30px;
+  transition: all 0.2s ease;
+  --swiper-theme-color: #ff4d4f;
+  position: absolute;
+}
+.SwiperSlide_main p {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+}
+.ProductItem_main {
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .MultipleSlide .swiper-button-next,
+  .MultipleSlide .swiper-button-prev {
+    display: none;
+  }
+}
+@media (max-width: 552px) {
+  .ParentMultipleSlide{
+    display: none;
+  }
+}

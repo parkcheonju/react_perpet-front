@@ -1,0 +1,98 @@
+.ParentIconSlider {
+  position: relative;
+}
+
+.IconSlider.swiper {
+  width: 100%;
+  min-width: 576px;
+  max-width: 1200px;
+  height: 262px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: static;
+}
+
+.IconSlider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.IconSlider .swiper-horizontal > .swiper-scrollbar,
+.IconSlider .swiper-scrollbar.swiper-scrollbar-horizontal {
+  left: 50% !important;
+  height: 2px !important;
+  transform: translateX(-50%) !important;
+}
+.IconSlider .swiper-button-next {
+  right: 50%;
+  margin-right: -656px;
+  top: 38%;
+  --swiper-navigation-size: 30px;
+  transition: all 0.2s ease;
+  --swiper-theme-color: #ff4d4f;
+  position: absolute;
+}
+
+.IconSlider .swiper-button-prev {
+  left: 50%;
+  margin-left: -656px;
+  top: 38%;
+  --swiper-navigation-size: 30px;
+  transition: all 0.2s ease;
+  --swiper-theme-color: #ff4d4f;
+  position: absolute;
+}
+
+.IconSlider .swiper-button-next:hover,
+.IconSlider .swiper-button-prev:hover {
+  scale: 1.1;
+}
+
+.IconSlider .swiper-scrollbar {
+  width: 60px !important;
+}
+.IconSlider .swiper-scrollbar-drag {
+  background-color: #ff425c !important;
+  height: 3px !important;
+}
+.iconSlider_icons-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.iconSlider_icons-titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.iconSlider_icons-title {
+  font-size: 0.9rem;
+  color: black;
+  margin-top: 10px;
+}
+.iconSlider_icons-subTitle {
+  color: #a1a1a1;
+  font-size: 0.4rem;
+}
+
+@media (max-width: 1200px) {
+  .IconSlider .swiper-button-next,
+  .IconSlider .swiper-button-prev {
+    display: none;
+  }
+}
+@media (max-width: 552px) {
+  .ParentIconSlider{
+    display: none;
+  }
+}

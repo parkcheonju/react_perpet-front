@@ -1,0 +1,153 @@
+.header {
+  padding-top: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_side-login {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header_main-searchbar {
+  position: relative;
+}
+
+
+/* searchbox */
+
+.search_contents {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: inherit;
+  z-index: 999999;
+  background-color: #ecebeb;
+  padding: 10px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search_content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.search_content-box:hover {
+  border: 1px solid #ff4d4e;
+  border-radius: 10px;
+}
+
+.search_content-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.search_content-text {
+  color: black;
+  font-weight: bold;
+}
+
+#active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header_side-nav{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header_main-logo{
+    padding-left: 20px;
+  }
+  .header_main{
+    justify-content: space-between;
+  }
+.header_main-searchbar{
+  padding-right: 20px;
+}
+  .header_side-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_side-nav > div > ul{
+    padding-left: 20px;
+  }
+
+  .header_nav{
+    display: none; 
+  }
+  .header_side {
+    display: none;
+  }
+
+  .navButton {
+    display: none;
+  }
+
+  .searchbar_main {
+    width: inherit;
+    padding: 0;
+  }
+
+  .header_main-searchbar {
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .header_main-searchbar input {
+    width: 100%;
+  }
+
+  .header_nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 830px) {
+  .searchbar_main {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .header_nav {
+    justify-content: start;
+  }
+
+  .searchbar_main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 610px) {
+  .header_nav {
+    justify-content: start;
+  }
+
+  .nav_memu {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .searchbar_main {
+    width: 100%;
+  }
+}
