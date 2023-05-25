@@ -11,7 +11,7 @@
 
 ## 배포 주소
 
-> **프론트 서버** : [https://react-perpet-front.vercel.app/](https://react-perpet-front.vercel.app/)<br> **백엔드 서버** : [https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products/)<br>
+> **FrontEnd-Page** : [https://react-perpet-front.vercel.app/](https://react-perpet-front.vercel.app/)<br> **BackEnd-Server** : [https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products/)<br> **Figma** : [https://www.figma.com/file/MEz6EUier3DwqKXYA5GoS8/3%EC%A1%B0--PERPET_project?type=design&node-id=0%3A1&t=no37jEu9dRAWYsQa-1](https://www.figma.com/file/MEz6EUier3DwqKXYA5GoS8/3%EC%A1%B0--PERPET_project?type=design&node-id=0%3A1&t=no37jEu9dRAWYsQa-1)<br> **Power Point** : [https://docs.google.com/presentation/d/1RFETuasXEGlar-pxB0ZZiiutkv2i5a3D/edit#slide=id.p1](https://docs.google.com/presentation/d/1RFETuasXEGlar-pxB0ZZiiutkv2i5a3D/edit#slide=id.p1)<br>
 
 ## 개발팀 소개
 
